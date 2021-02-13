@@ -1,3 +1,20 @@
 liste = [12, 25, 6, 8, 56, 19, 21]
 liste.sort(reverse = True)
 print()
+
+
+a=int(input("1. sayıyı giriniz:"))
+b=int(input("2. sayıyı giriniz:"))
+c=int(input("3. sayıyı giriniz:"))
+d=int(input("4. sayıyı giriniz:"))
+e=int(input("5. sayıyı giriniz:"))
+f=int(input("6. sayıyı giriniz:"))
+g=int(input("7. sayıyı giriniz:"))
+myList=[a,b,c,d,e,f,g]
+bekle=myList[4]
+myList[4]=myList[0]
+myList[0]=bekle
+bekle2=myList[3]
+myList[3]=myList[1]
+myList[1]=bekle2
+print(myList[6::-1])
